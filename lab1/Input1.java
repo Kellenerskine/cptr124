@@ -4,10 +4,15 @@ import java.util.Scanner;
 
 public class Input1 {
     public static void main(String [] args) {
-        int nums;
+        int num1;
+        int num2;
+
         Scanner scnr = new Scanner(System.in);
-        nums = scnr.nextInt();
-        System.out.println("The number you entered is: ")
-        System.out.println(nums);
+
+        num1 = scnr.nextInt();
+        num2 = scnr.nextInt();
+
+        System.out.println("The number you entered is: ");
+        System.out.println(num1 + " " + num2);
     }
 }
