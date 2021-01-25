@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassCode",
+            "request": "launch",
+            "mainClass": "lab1.ClassCode",
+            "projectName": "cptr124_d3cfe4f0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Initials",
+            "request": "launch",
+            "mainClass": "lab1.Initials",
+            "projectName": "cptr124_d3cfe4f0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Input1",
+            "request": "launch",
+            "mainClass": "lab1.Input1",
+            "projectName": "cptr124_d3cfe4f0"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassCode(1)",
+            "request": "launch",
+            "mainClass": "lab1.ClassCode",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
+            "name": "Launch Initials(1)",
+            "request": "launch",
+            "mainClass": "lab1.Initials",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
+            "name": "Launch Input1(1)",
+            "request": "launch",
+            "mainClass": "lab1.Input1",
+            "projectName": "cptr124"
+        }
+    ]
+}
