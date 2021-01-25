@@ -12,7 +12,8 @@ public class Input1 {
         num1 = scnr.nextInt();
         num2 = scnr.nextInt();
 
-        System.out.println("The number you entered is: ");
-        System.out.println(num1 + " " + num2);
+        System.out.println(num1 + num2);
+        System.out.println(num1 - num2);
+        System.out.println(num1 * num2);
     }
 }
