@@ -9,6 +9,6 @@ public class Initials {
         System.out.println("KK   KK         AA       AA     EE");
         System.out.println("KK     KK      AA         AA    EE");
         System.out.println("KK       KK   AA           AA   EEEEEEEEE");
-        //random comment (new coommet){another one}[eclipse test]
+        //random comment (new comment){another one}[eclipse test]
     }
 }

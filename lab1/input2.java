@@ -2,7 +2,7 @@ package lab1;
 
 import java.util.Scanner;
 
-public class Input1 {
+public class input2 {
     public static void main(String [] args) {
         int num1;
         int num2;
@@ -13,11 +13,10 @@ public class Input1 {
 
         num1 = sc.nextInt();
         num2 = sc.nextInt();
-
+        
         System.out.println("Sum: " + num1 + " + " + num2 + " = " + (num1 + num2));
         System.out.println("Difference: " + num1 + " - " + num2 + " = " + (num1 - num2));
         System.out.println("Product: " + num1 + " x " + num2 + " = " + (num1 * num2));
-
     sc.close();
     }
 }
