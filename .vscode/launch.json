@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DistToIn",
+            "request": "launch",
+            "mainClass": "Misc.DistToIn",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
+            "name": "Launch Division",
+            "request": "launch",
+            "mainClass": "Misc.Division",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
+            "name": "Launch Division",
+            "request": "launch",
+            "mainClass": "Division",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
