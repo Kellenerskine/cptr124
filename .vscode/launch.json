@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Hms2s",
+            "request": "launch",
+            "mainClass": "Lab2.Hms2s",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch DistToIn",
             "request": "launch",
             "mainClass": "Misc.DistToIn",

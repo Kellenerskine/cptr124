@@ -1,2 +1,2 @@
 # cptr124
-class stoof
+class stuff
