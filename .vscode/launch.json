@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch S2hms",
+            "request": "launch",
+            "mainClass": "Lab2.S2hms",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch Hms2s",
             "request": "launch",
             "mainClass": "Lab2.Hms2s",
