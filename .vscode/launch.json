@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ExcerComp",
+            "request": "launch",
+            "mainClass": "Lab2.ExcerComp",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch S2hms",
             "request": "launch",
             "mainClass": "Lab2.S2hms",
