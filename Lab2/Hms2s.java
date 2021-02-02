@@ -8,7 +8,7 @@ public class Hms2s{
         int seconds;
         
         Scanner scn = new Scanner(System.in);
-        System.out.println("Please enter in the hours, minutes, and seconds separated by spaces: ");
+        System.out.print("Please enter in the hours, minutes, and seconds separated by spaces: ");
         hours = scn.nextInt();
         minutes = scn.nextInt();
         seconds = scn.nextInt();
@@ -16,7 +16,7 @@ public class Hms2s{
         int hoursToSeconds = ((hours*60)*60);
         int minutesToSeconds = (minutes*60);
 
-        System.out.println((hoursToSeconds + minutesToSeconds + seconds));
+        System.out.println("That is " + (hoursToSeconds + minutesToSeconds + seconds) + " seconds.");
         scn.close();
     }
 
