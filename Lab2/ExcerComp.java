@@ -17,12 +17,11 @@ public class ExcerComp {
         milkshake = scn.nextInt();
         int totalCal = ((salad * salCal) + (beanBurrito * bbCal) + (milkshake * milkCal));
 
-        System.out.println(totalCal);
+        double milesToExcer = totalCal / 100.0;
 
-
-
-
-        
+        System.out.println("You have eaten a total of " + totalCal + " calories");
+        System.out.println("You need to run or walk " + milesToExcer + " miles to burn the calories off.");
+        scn.close();
     }
     
 }
