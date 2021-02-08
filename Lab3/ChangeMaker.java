@@ -30,13 +30,22 @@ public class ChangeMaker {
             changeNickels = (int)(amount / 0.05);
             amount = amount - changeNickels * 0.05;
             changePennies = (int)(amount / 0.01);
-    
+            
             System.out.println("Your change is: ");
-            System.out.println(changeDollar + " dollars");
-            System.out.println(changeQuarters + " quarters");
-            System.out.println(changeDimes + " dimes");
-            System.out.println(changeNickels + " nickels");
-            System.out.println(changePennies + " pennies");    
+            if(changeDollar > 0){
+                if(changeDollar > 1){
+                    System.out.println(changeDollar + " dollars");
+                }else{System.out.println(changeDollar + " dollar");}
+            }
+            if(changeQuarters > 0){
+                if(changeQuarters > 1){
+                    System.out.println(changeQuarters + " quarters");
+                }else{
+                    System.out.println(changeQuarters + " quarter");} 
+            }
+            if(changeDimes > 0){System.out.println(changeDimes + " dimes");}
+            if(changeNickels > 0){System.out.println(changeNickels + " nickels");}
+            if(changePennies > 0){System.out.println(changePennies + " pennies");}
         }
         scn.close();
     }
