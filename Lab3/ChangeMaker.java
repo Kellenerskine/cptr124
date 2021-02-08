@@ -30,7 +30,7 @@ public class ChangeMaker {
             changeNickels = (int)(amount / 0.05);
             amount = amount - changeNickels * 0.05;
             changePennies = (int)(amount / 0.01);
-            
+            changePennies++;
             System.out.println("Your change is: ");
             if(changeDollar > 0){
                 if(changeDollar > 1){
