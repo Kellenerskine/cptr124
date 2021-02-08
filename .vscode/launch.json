@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ChangeMaker",
+            "request": "launch",
+            "mainClass": "Lab3.ChangeMaker",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch ExcerComp",
             "request": "launch",
             "mainClass": "Lab2.ExcerComp",
