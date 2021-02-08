@@ -3,7 +3,7 @@ import java.util.Scanner
 
 public class ChangeMaker {
     public static void main(String [] args) {
-        
+
         Scanner scn = new Scanner(System.in);
 
         int moneyTotal; //less than $10
