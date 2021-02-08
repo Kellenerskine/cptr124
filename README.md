@@ -1,2 +1,2 @@
 # cptr124
-class stuff
+a rather useless readme file...
