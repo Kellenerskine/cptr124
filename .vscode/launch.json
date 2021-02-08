@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ChangeMaker2",
+            "request": "launch",
+            "mainClass": "ChangeMaker2",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChangeMaker",
+            "request": "launch",
+            "mainClass": "ChangeMaker",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch ChangeMaker",
             "request": "launch",
             "mainClass": "Lab3.ChangeMaker",
