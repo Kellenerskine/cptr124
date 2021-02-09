@@ -9,7 +9,7 @@ public class ChangeMaker {
         moneyTotal = scn.nextFloat();
         System.out.println("Enter some stoof: ");
         
-        int centVal = (int) (moneyTotal * 100);
+        int centVal = Math.round((moneyTotal * 100));
         int dollars = (centVal / 100);
         int quarters = ((centVal % 100) / 25);
         int dimes = ((centVal % 100 % 25) / 10);
