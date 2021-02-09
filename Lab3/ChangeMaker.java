@@ -5,47 +5,54 @@ public class ChangeMaker {
     public static void main(String [] args) {
 
         Scanner scn = new Scanner(System.in);
+        float moneyTotal;
+        moneyTotal = scn.nextFloat();
+        System.out.println("Enter some stoof: ");
+        
+        int centVal = (int) (moneyTotal * 100);
+        int dollars = (centVal / 100);
+        int quarters = ((centVal % 100) / 25);
+        int dimes = ((centVal % 100 % 25) / 10);
+        int nickels = ((centVal % 100 % 25 % 10) / 5);
+        int pennies = ((centVal % 100 % 25 % 10 % 5) % 5);
 
-        double amount;
-        double moneyTotal;
-        int changeDollar; //1 dollar
-        int changeQuarters; //25 cents
-        int changeDimes; //10 cents
-        int changeNickels; //5 cents
-        int changePennies; //1 cent
-
-        System.out.print("Enter in an amount of money less than $10 and more than $0: ");
-        moneyTotal = scn.nextDouble();
-        amount = moneyTotal;
-
-        if(amount >= 10 || amount < 0){
+        if(moneyTotal >= 10 || moneyTotal <= 0){
             System.out.println("The number you entered is not within the accepted range. 10 > input > 0.");
         }else{
-            changeDollar = (int)amount / 1;
-            amount = amount - changeDollar * 1;
-            changeQuarters = (int)(amount / 0.25);
-            amount = amount - changeQuarters * 0.25;
-            changeDimes = (int)(amount / 0.10);
-            amount = amount - changeDimes * 0.10;
-            changeNickels = (int)(amount / 0.05);
-            amount = amount - changeNickels * 0.05;
-            changePennies = (int)(amount / 0.01);
-            
             System.out.println("Your change is: ");
-            if(changeDollar > 0){
-                if(changeDollar > 1){
-                    System.out.println(changeDollar + " dollars");
-                }else{System.out.println(changeDollar + " dollar");}
+            if(dollars > 0){
+                if(dollars > 1){
+                    System.out.println(dollars + " dollars");
+                }else{System.out.println(dollars + " dollar");}
             }
-            if(changeQuarters > 0){
-                if(changeQuarters > 1){
-                    System.out.println(changeQuarters + " quarters");
+            if(quarters > 0){
+                if(quarters > 1){
+                    System.out.println(quarters + " quarters");
                 }else{
-                    System.out.println(changeQuarters + " quarter");} 
+                    System.out.println(quarters + " quarter");
+                }
             }
-            if(changeDimes > 0){System.out.println(changeDimes + " dimes");}
-            if(changeNickels > 0){System.out.println(changeNickels + " nickels");}
-            if(changePennies > 0){System.out.println(changePennies + " pennies");}
+            if(dimes > 0){
+                if (dimes > 1){
+                    System.out.println(dimes + " dime");
+                }else{
+                    System.out.println(dimes + " dimes");
+                }
+            }
+            if(nickels > 0){
+                if(nickels > 1){
+                    System.out.println(nickels + " nickel");
+                }else{
+                    System.out.println(nickels + " nickels");
+                }
+            }
+            if(pennies > 0){
+                if(pennies > 1){
+                    System.out.println(pennies + " penny");
+                }else{
+                    System.out.println(pennies + " pennies");
+                }
+            }
         }
         scn.close();
     }
