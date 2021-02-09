@@ -6,9 +6,10 @@ public class ChangeMaker {
 
         Scanner scn = new Scanner(System.in);
         float moneyTotal;
+        System.out.print("Enter a money value under $10 and more than $0: ");
         moneyTotal = scn.nextFloat();
-        System.out.println("Enter some stoof: ");
-        
+        scn.close();
+
         int centVal = Math.round((moneyTotal * 100));
         int dollars = (centVal / 100);
         int quarters = ((centVal % 100) / 25);
@@ -54,6 +55,5 @@ public class ChangeMaker {
                 }
             }
         }
-        scn.close();
     }
 }
