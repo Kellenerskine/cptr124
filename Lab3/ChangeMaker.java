@@ -35,23 +35,23 @@ public class ChangeMaker {
             }
             if(dimes > 0){
                 if (dimes > 1){
-                    System.out.println(dimes + " dime");
-                }else{
                     System.out.println(dimes + " dimes");
+                }else{
+                    System.out.println(dimes + " dime");
                 }
             }
             if(nickels > 0){
                 if(nickels > 1){
-                    System.out.println(nickels + " nickel");
-                }else{
                     System.out.println(nickels + " nickels");
+                }else{
+                    System.out.println(nickels + " nickel");
                 }
             }
             if(pennies > 0){
                 if(pennies > 1){
-                    System.out.println(pennies + " penny");
-                }else{
                     System.out.println(pennies + " pennies");
+                }else{
+                    System.out.println(pennies + " penny");
                 }
             }
         }
