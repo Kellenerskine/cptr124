@@ -11,7 +11,7 @@ public class GuessingGame {
         System.out.print("Guess a number between 1 and 99: ");
         Random rand = new Random();
         correctGuess = rand.nextInt(100);
-        System.out.print(correctGuess);
+        
         int i = 0;
         while (i < 10){
             userGuess = scn.nextInt();
