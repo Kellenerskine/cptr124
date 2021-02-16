@@ -8,26 +8,22 @@ public class GuessingGame {
         int userGuess;
         int correctGuess;
 
-        System.out.print("Guess a number between 1 and 99: ");
+        System.out.print("Guess a number between 1 and 100: ");
         Random rand = new Random();
-        correctGuess = rand.nextInt(100);
+        correctGuess = rand.nextInt(100) + 1;
         
         int i = 0;
-        while (i < 10){
+        while (i < 10001){
             userGuess = scn.nextInt();
             if(userGuess == correctGuess){
-                System.out.println(correctGuess + " is the correct number!");
+                System.out.print(correctGuess + " is the correct number! It took you " + (i+1) + " guesses to get the answer.");
             }else if(userGuess > correctGuess){
-                System.out.println("Wrong number! The correct number is lower. You have " + (9 - i) + " guesses left");
+                System.out.println("Wrong number! The correct number is lower.");
                 i++;
             }else if(userGuess < correctGuess){
-                System.out.println("Wrong number! The correct number is higher. You have " + (9 - i) + " guesses left.");
+                System.out.println("Wrong number! The correct number is higher.");
                 i++;
             }
-        }
-        if(i == 10){
-            System.out.println("You have run out of guesses. The correct answer was: " + correctGuess);
-            System.out.println(":(");
         }
         scn.close();
     }
