@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class GpaCalc {
     public static void main(String [] args){
         Scanner scn = new Scanner(System.in);
-        char letterGrade;
+        char letterGrade = scn.next().charAt(0);
 
         HashMap<String, Double> gradeValue = new HashMap<String, Double>();
         gradeValue.put("A", 4.0);
@@ -24,19 +24,16 @@ public class GpaCalc {
         Double gradeValueSum = (gradeValueA + gradeValueB + gradeValueC + gradeValueD + gradeValueF);
         
         System.out.println(gradeValueSum); 
-      }
-    }
-    
-        
+
         int count = 1;
         while (letterGrade != 'Z' || letterGrade != 'z'){
-            
-            System.out.println("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to exit and get results.");
+            //char letterGrade;
+            System.out.println("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results.");
             letterGrade = scn.next().charAt(0);
             char letter = Character.toUpperCase(letterGrade);
             String letterAsString = String.valueOf(letter);
 
-            if (letterAsString != "A" || letterAsString != "B" || letterAsString != "C" || letterAsString != "D" || letterAsString != "F"){}
+            if (letterAsString != "A" && letterAsString != "B" && letterAsString != "C" && letterAsString != "D" && letterAsString != "F"){}
             
 
             
@@ -44,5 +41,7 @@ public class GpaCalc {
             System.out.println(count);
             count++;
         }
+        Double result = (gradeValueSum / count);
+        System.out.println(result);
     }
 }
