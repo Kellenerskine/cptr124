@@ -1,20 +1,33 @@
 package Lab5;
 import java.util.Scanner;
 import java.lang.*;
+import java.util.Map;
+import java.util.HashMap;
 
 public class GpaCalc {
     public static void main(String [] args){
         Scanner scn = new Scanner(System.in);
-        char letterGrade = 'A';
+        char letterGrade;
 
-        Double A = 4.0;
-        Double B = 3.0;
-        Double C = 2.0;
-        Double D = 1.0;
-        Double F = 0.0;
-
+        HashMap<String, Double> gradeValue = new HashMap<String, Double>();
+        gradeValue.put("A", 4.0);
+        gradeValue.put("B", 3.0);
+        gradeValue.put("C", 2.0);
+        gradeValue.put("D", 1.0);
+        gradeValue.put("F", 0.0);
+        Double gradeValueA = gradeValue.get("A");
+        Double gradeValueB = gradeValue.get("B");
+        Double gradeValueC = gradeValue.get("C");
+        Double gradeValueD = gradeValue.get("D");
+        Double gradeValueF = gradeValue.get("F");
         
-
+        Double gradeValueSum = (gradeValueA + gradeValueB + gradeValueC + gradeValueD + gradeValueF);
+        
+        System.out.println(gradeValueSum); 
+      }
+    }
+    
+        
         int count = 1;
         while (letterGrade != 'Z' || letterGrade != 'z'){
             
