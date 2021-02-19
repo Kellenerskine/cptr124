@@ -13,6 +13,9 @@ public class GpaCalc {
 
         int count = 0;
         while (letterGrade != 'Z' && letterGrade != 'z'){
+            System.out.print("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results. ");
+            letterGrade = scn.next().charAt(0);
+            char letter = Character.toUpperCase(letterGrade);
 
             HashMap<Character, Double> gradeValue = new HashMap<Character, Double>();
             gradeValue.put('A', 4.0);
@@ -21,13 +24,8 @@ public class GpaCalc {
             gradeValue.put('D', 1.0);
             gradeValue.put('F', 0.0);
 
-            System.out.println("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results.");
-
-            letterGrade = scn.next().charAt(0);
-
-            char letter = Character.toUpperCase(letterGrade);
-
             System.out.println(gradeValue.get(letter));
+            gradeValueNum = gradeValue.get(letter);
             gradeValueSum = (gradeValueSum + gradeValueNum);
             count++;
         }
