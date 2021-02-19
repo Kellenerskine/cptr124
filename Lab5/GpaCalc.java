@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class GpaCalc {
     public static void main(String [] args){
         Scanner scn = new Scanner(System.in);
-        char letterGrade = scn.next().charAt(0);
+        String letterGrade = scn.next();
 
         HashMap<String, Double> gradeValue = new HashMap<String, Double>();
         gradeValue.put("A", 4.0);
@@ -26,19 +26,18 @@ public class GpaCalc {
         System.out.println(gradeValueSum); 
 
         int count = 1;
-        while (letterGrade != 'Z' || letterGrade != 'z'){
+        while (letterGrade != "Z" || letterGrade != "z"){
             //char letterGrade;
             System.out.println("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results.");
-            letterGrade = scn.next().charAt(0);
+            letterGrade = scn.next();//.charAt(0);
             char letter = Character.toUpperCase(letterGrade);
             String letterAsString = String.valueOf(letter);
 
-            if (letterAsString != "A" && letterAsString != "B" && letterAsString != "C" && letterAsString != "D" && letterAsString != "F"){}
+            //if (letterAsString != "A" && letterAsString != "B" && letterAsString != "C" && letterAsString != "D" && letterAsString != "F"){}
             
 
             
             System.out.println(letter);
-            System.out.println(count);
             count++;
         }
         Double result = (gradeValueSum / count);
