@@ -27,13 +27,14 @@ public class SchooBudge {
 
         //Monthly payment:
         System.out.print("Enter in the total bill: ");
-        double totalBill = scn.nextInt();
+        float totalBill = scn.nextFloat();
         System.out.print("Please enter the number of months you will be paying over: ");
-        double numMonths = scn.nextInt();
-        double payPerMonth = (totalBill / numMonths);
+        float numMonths = scn.nextFloat();
+        float payPerMonth = (totalBill / numMonths);
         System.out.println("You need to pay $" + payPerMonth + " every month.");
 
-        double diffPerMonth = (payPerMonth - monthlyPay);
+        float diffPerMonth = (payPerMonth - monthlyPay);
+        System.out.println(" ");
         System.out.println("You need to make up $" + diffPerMonth + " every month.");
 
         scn.close();
