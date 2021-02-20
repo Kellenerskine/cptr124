@@ -23,6 +23,8 @@ public class GpaCalc {
             gradeValue.put('C', 2.0);
             gradeValue.put('D', 1.0);
             gradeValue.put('F', 0.0);
+            
+            if (letterGrade == 'Z' || letterGrade == 'z') {break;}
 
             System.out.println(gradeValue.get(letter));
             gradeValueNum = gradeValue.get(letter);
