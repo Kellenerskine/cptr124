@@ -26,7 +26,6 @@ public class GpaCalc {
             
             if (letterGrade == 'Z' || letterGrade == 'z') {break;}
 
-            //System.out.println(gradeValue.get(letter));
             gradeValueNum = gradeValue.get(letter);
             gradeValueSum = (gradeValueSum + gradeValueNum);
             if (gradeValueNum >= 1.0){passing++;}
