@@ -9,11 +9,13 @@ public class GpaCalc {
         Double gradeValueSum = 0.0;
         Double gradeValueNum = 0.0;
 
-        int passing = 0;
-        int failing = 0;
-        int count = 0;
+        double passing = 0;
+        double failing = 0;
+        double count = 0;
+
+        System.out.print("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results. ");
+
         while (letterGrade != 'Z' && letterGrade != 'z'){
-            System.out.print("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results. ");
             letterGrade = scn.next().charAt(0);
             char letter = Character.toUpperCase(letterGrade);
 
@@ -32,13 +34,16 @@ public class GpaCalc {
             if (gradeValueNum < 1.0){failing++;}
             count++;
         }
+
         Double result = (gradeValueSum / count);
         System.out.println(" ");
         System.out.println("Results: ");
-        System.out.println("Students passing: " + passing);
-        System.out.println("Students failing: " + failing);
-        System.out.println(" ");
-        System.out.printf("Class GPA: " + "%5.3f%n", result);
+        System.out.printf("Students passing: " + (int) passing + " (" + "%.3f" + "%%)" , ((passing / count) * 100));
+        System.out.println();
+        System.out.printf("Students failing: " + (int) failing + " (" + "%.3f" + "%%)" , ((failing / count) * 100));
+        System.out.println();
+        System.out.printf("Class GPA: " + "%.3f" , result);
+        System.out.println();
         scn.close();
     }
 }
