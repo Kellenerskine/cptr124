@@ -19,5 +19,6 @@ public class EvenNums {
         }
         System.out.println("Number of evens: " + evenValsNum);
         System.out.println("Sum of evens: " + evenValsSum);
+        scn.close();
     }
 }
