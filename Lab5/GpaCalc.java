@@ -1,9 +1,10 @@
 package Lab5;
+
 import java.util.Scanner;
 import java.util.HashMap;
 
 public class GpaCalc {
-    public static void main(String [] args){
+    public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         char letterGrade = 0;
         Double gradeValueSum = 0.0;
@@ -15,7 +16,7 @@ public class GpaCalc {
 
         System.out.print("Input a letter grade as a capital letter. ie. A,B,C,D,F. Type Z to finish and get results. ");
 
-        while (letterGrade != 'Z' && letterGrade != 'z'){
+        while (letterGrade != 'Z' && letterGrade != 'z') {
             letterGrade = scn.next().charAt(0);
             char letter = Character.toUpperCase(letterGrade);
 
@@ -25,24 +26,30 @@ public class GpaCalc {
             gradeValue.put('C', 2.0);
             gradeValue.put('D', 1.0);
             gradeValue.put('F', 0.0);
-            
-            if (letterGrade == 'Z' || letterGrade == 'z') {break;}
+
+            if (letterGrade == 'Z' || letterGrade == 'z') {
+                break;
+            }
 
             gradeValueNum = gradeValue.get(letter);
             gradeValueSum = (gradeValueSum + gradeValueNum);
-            if (gradeValueNum >= 1.0){passing++;}
-            if (gradeValueNum < 1.0){failing++;}
+            if (gradeValueNum >= 1.0) {
+                passing++;
+            }
+            if (gradeValueNum < 1.0) {
+                failing++;
+            }
             count++;
         }
 
         Double result = (gradeValueSum / count);
         System.out.println(" ");
         System.out.println("Results: ");
-        System.out.printf("Students passing: " + (int) passing + " (" + "%.3f" + "%%)" , ((passing / count) * 100));
+        System.out.printf("Students passing: " + (int) passing + " (" + "%.3f" + "%%)", ((passing / count) * 100));
         System.out.println();
-        System.out.printf("Students failing: " + (int) failing + " (" + "%.3f" + "%%)" , ((failing / count) * 100));
+        System.out.printf("Students failing: " + (int) failing + " (" + "%.3f" + "%%)", ((failing / count) * 100));
         System.out.println();
-        System.out.printf("Class GPA: " + "%.3f" , result);
+        System.out.printf("Class GPA: " + "%.3f", result);
         System.out.println();
         scn.close();
     }
