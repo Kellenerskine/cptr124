@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestOneB",
+            "request": "launch",
+            "mainClass": "Misc.TestOneB",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch GpaCalc",
             "request": "launch",
             "mainClass": "Lab5.GpaCalc",
