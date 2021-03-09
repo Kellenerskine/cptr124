@@ -23,13 +23,10 @@ public class RollAvgGraph {
 
         double[] rollingAvg = new double[numberOfEntries - 4];
 
-        double rollAvgTotal = 0;
         for (int i = 0; i < rollingAvg.length; i++){
-            rollAvgTotal = (double) (numbers[i] + numbers[i + 1] + numbers[i + 2] + numbers[i + 3] + numbers[i + 4]) / 5;
+            rollingAvg[i] = (numbers[i] + numbers[i + 1] + numbers[i + 2] + numbers[i + 3] + numbers[i + 4]) / 5.0;
         }
 
-		System.out.println(Arrays.toString(numbers));
 		Plotter.plot(rollingAvg, 800, 300);
-		
 	}
 }
