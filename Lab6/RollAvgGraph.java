@@ -23,9 +23,9 @@ public class RollAvgGraph {
 
         double[] rollingAvg = new double[numberOfEntries - 4];
 
-        int rollAvgTotal = 0;
+        double rollAvgTotal = 0;
         for (int i = 0; i < rollingAvg.length; i++){
-            rollingAvg = (double) (numbers[i] + numbers[i + 1] + numbers[i + 2] + numbers[i + 3] + numbers[i + 4]) / 5;
+            rollAvgTotal = (double) (numbers[i] + numbers[i + 1] + numbers[i + 2] + numbers[i + 3] + numbers[i + 4]) / 5;
         }
 
 		System.out.println(Arrays.toString(numbers));
