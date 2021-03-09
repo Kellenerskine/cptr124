@@ -31,7 +31,7 @@ public class SchooBudge {
         System.out.print("Please enter the number of months you will be paying over: ");
         float numMonths = scn.nextFloat();
         float payPerMonth = (totalBill / numMonths);
-        System.out.println("You need to pay $" + payPerMonth + " every month.");
+        System.out.println("You need to pay $" + (payPerMonth + 5/*spotify*/) + " every month.");
 
         float diffPerMonth = (payPerMonth - monthlyPay);
         System.out.println(" ");

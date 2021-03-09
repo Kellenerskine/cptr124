@@ -3,7 +3,7 @@ package Misc;
 import java.util.Scanner;
 
 public class TestOne {
-    public static void main (String [] args){
+    public static void main (String[] args){
         Scanner scn = new Scanner(System.in);
 
         System.out.print("Please enter the values: ");
