@@ -11,7 +11,7 @@ public class InClass1 {
         n3 = n1++;
         System.out.printf("n1 = %d n3 = %d%n", n1, n3);
         int randomInput = scn.nextInt();
-        System.out.print(randomInput, n2);
+        System.out.println(randomInput, n2);
 
         scn.close();
 
