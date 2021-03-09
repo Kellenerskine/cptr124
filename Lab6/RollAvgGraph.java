@@ -27,6 +27,7 @@ public class RollAvgGraph {
             rollingAvg[i] = (numbers[i] + numbers[i + 1] + numbers[i + 2] + numbers[i + 3] + numbers[i + 4]) / 5.0;
         }
 
+		Plotter.plot(numbers, 800, 300);
 		Plotter.plot(rollingAvg, 800, 300);
 	}
 }
