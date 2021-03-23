@@ -36,7 +36,7 @@ public class TestGeometry {
 		System.out.println("(" + x2 + ", " + y2 + ") is "
 				+ Geometry.lineToString(Geometry.slope(x1, y1, x2, y2), Geometry.intercept(x1, y1, x2, y2)));
 	}
-// -1 -1 5 -1
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		do {
