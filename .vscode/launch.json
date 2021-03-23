@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestGeometry",
+            "request": "launch",
+            "mainClass": "Lab7.TestGeometry",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch RollAvgGraph",
             "request": "launch",
             "mainClass": "Lab6.RollAvgGraph",
