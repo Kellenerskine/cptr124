@@ -48,12 +48,28 @@ public class Geometry {
 		String yeq = "y = ";
 		String slope = "";
 		String inter = "";
-		slope = String.format("%.2f", m) + String.format("x + ");
+		slope = String.format("%.2f", m) + String.format("x ");
 		inter = String.format("%.2f", b);
+		//vert line
+		if (m == Double.POSITIVE_INFINITY){return ("x = " + String.format("%.2f", b));}
+		if (floatEquals(m, 0.00)){return ("y = " + String.format("%.2f", b));}
+		//make sure if the m is 1 not to display num
+		if (floatEquals(m, 1.00)){
+			slope = String.format("x ");
+		}else if(floatEquals(m, -1.00)){
+			slope = String.format("-x ");
+		}
+		//proper signs in front of b
+		if (b > 0){
+			inter = String.format("+ " + "%.2f", Math.abs(b));
+		}else if (b < 0){
+			inter = String.format("- " + "%.2f", Math.abs(b));
+		}else {
+			inter = String.format(" ");
+		}
+
 		String finProd = (yeq + slope + inter);
 		return finProd;
-
-		//String s = String.format("y = " + (m * x1) + b);
 	}
 
 	public static String lineToString(double x1, double y1, double x2, double y2) {
