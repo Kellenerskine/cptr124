@@ -3,8 +3,6 @@ package Lab6;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.util.Arrays;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
