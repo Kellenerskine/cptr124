@@ -43,11 +43,14 @@ public class TestGeometry {
 			double p_x1, p_y1, p_x2, p_y2;
 
 			// Get the points from the user
-			System.out.print("Enter the point coordinates x1, y1, x2, y2: ");
+			System.out.print("Enter the point coordinates x1, y1, x2, y2; type f to exit: ");
 			p_x1 = scan.nextDouble();
 			p_y1 = scan.nextDouble();
 			p_x2 = scan.nextDouble();
 			p_y2 = scan.nextDouble();
+			
+			if ('f' == p_x1)
+				break;
 
 			// Exercise the geometry methods
 			doDistance(p_x1, p_y1, p_x2, p_y2);
@@ -56,6 +59,7 @@ public class TestGeometry {
 			doEquation(p_x1, p_y1, p_x2, p_y2);
 			System.out.println("----------------------");
 		} while (true);
-//		scan.close();
+
+		scan.close();
 	}
 }
