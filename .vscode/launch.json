@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch VisualGeometry",
+            "request": "launch",
+            "mainClass": "Lab8.VisualGeometry",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch TestGeometry",
             "request": "launch",
             "mainClass": "Lab7.TestGeometry",

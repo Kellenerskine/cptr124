@@ -17,6 +17,11 @@ public class Line {
      * #######################################################
      */
 
+    private double m;
+    private double b;
+
+    private Point p1;
+    private Point p2;
     /**
      * Test to see if two double-precision floating-point values are "equal." The
      * values are considered equal when their difference is small.
@@ -36,11 +41,12 @@ public class Line {
      * 
      * @param m the slope of the new line {@code Double.POSITIVE_INFINITY} for a
      *          vertical line
-     * @param b the <em>y</em>-axis intercept for a non-vertical line; the
-     *          <em>x</em>-axis intercept for a vertica line
+     * @param b the y-axis intercept for a non-vertical line; the
+     *          x-axis intercept for a vertical line
      */
     public Line(double m, double b) {
-        // Add your code
+        this.m = m;
+        this.b = b;
     }
 
     /**
@@ -52,7 +58,12 @@ public class Line {
      * @see Point
      */
     public Line(Point p1, Point p2) {
-        // Add your code
+        this.p1 = p1;
+        this.p2 = p2;
+
+        if (p1 == p2){
+            throw new IllegalArgumentException();
+        }
     }
 
     /**
@@ -62,8 +73,8 @@ public class Line {
      *         is vertical
      */
     public double slope() {
-        // Replace with your code
-        return 0.0;
+        double slope2 = ((p2.y - p1.y) / (p2.x - p1.x));
+        return slope2;
     }
 
     /**
@@ -77,8 +88,16 @@ public class Line {
      *         vertical
      */
     public double intercept() {
-        // Replace with your code
-        return 0.0;
+        double slope = slope();
+        double inter = 0.0;
+        if (p1.x == p2.x){
+            inter = p1.x;
+        }else if(p1.y == p2.y){
+            inter = p1.y;
+        }else {
+            inter = (p1.y - (slope * p1.x));
+        }
+        return inter;
     }
 
     /**
@@ -90,8 +109,14 @@ public class Line {
      * @see Point
      */
     public Point intersection(Line other) {
-        // Replace with your code
-        return new Point(0, 0);
+        //x = (b2 - b1)/(m1 - m2)
+        double x = 0;
+        double y = 0;
+
+        x = ((other.b - b) / (other.m - m));
+        y = ((this.m * (x)) + this.b);
+
+        return new Point(x, y);
     }
 
     /**

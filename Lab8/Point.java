@@ -28,8 +28,11 @@ public class Point {
      * @return the distance between this point and another point
      */
     public double distance(Point other) {
-        // Replace with your code
-        return 0.0;
+        double xParenth = ((other.x - x) * (other.x - x));
+		double yParenth = ((other.y - y) * (other.y - y));
+		double toSqRoot = xParenth + yParenth;
+		double result = Math.sqrt(toSqRoot);
+        return result;
     }
 
     /**
