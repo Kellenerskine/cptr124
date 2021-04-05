@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimeInput",
+            "request": "launch",
+            "mainClass": "classCode.TimeInput",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch VisualGeometry",
             "request": "launch",
             "mainClass": "Lab8.VisualGeometry",
