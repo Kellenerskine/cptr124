@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GCD_Compare",
+            "request": "launch",
+            "mainClass": "classCode.chapt7.GCD_Compare",
+            "projectName": "cptr124"
+        },
+        {
+            "type": "java",
             "name": "Launch TimeInput",
             "request": "launch",
             "mainClass": "classCode.TimeInput",
